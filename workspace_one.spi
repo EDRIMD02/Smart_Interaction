@@ -1,1 +1,189 @@
+# vivaldi spring
 
+use_bpm 90
+
+in_thread do #eerste viool #"in_thread do" zorgt ervoor dat deze code tegelijkertijd wordt afgespeeld met de andere lijnen code die in "in_thread do" staan
+  play :E6 #optel
+  sleep 0.5
+  
+  2.times do #maat 1-2 #"2.times do" = loop 2 maal
+    play :Gs6
+    sleep 0.5
+    play :Gs6
+    sleep 0.5
+    play :Gs6
+    sleep 0.5
+    play :Fs6
+    sleep 0.25
+    play :E6
+    sleep 0.25
+    play :B6
+    sleep 1.5
+    
+    play :B6
+    sleep 0.25
+    play :A6
+    sleep 0.25
+  end #einde van de "2.times do"
+  
+  play :Gs6 #maat 3
+  sleep 0.5
+  play :A6
+  sleep 0.25
+  play :B6
+  sleep 0.25
+  play :A6
+  sleep 0.5
+  play :Gs6
+  sleep 0.5
+  
+  play :Fs6
+  sleep 0.5
+  play :Ds6
+  sleep 0.5
+  play :B5
+  sleep 0.5
+  play :E6
+  sleep 0.5
+  
+  2.times do #maat 4-5
+    play :Gs6
+    sleep 0.5
+    play :Gs6
+    sleep 0.5
+    play :Gs6
+    sleep 0.5
+    play :Fs6
+    sleep 0.25
+    play :E6
+    sleep 0.25
+    play :B6
+    sleep 1.5
+    
+    play :B6
+    sleep 0.25
+    play :A6
+    sleep 0.25
+  end
+  
+  play :Gs6 #maat 6
+  sleep 0.5
+  play :A6
+  sleep 0.25
+  play :B6
+  sleep 0.25
+  play :A6
+  sleep 0.5
+  play :Gs6
+  sleep 0.5
+  play :Fs6
+  sleep 1
+  
+  sleep 0.5
+  
+  2.times do #maat 7-13
+    play :E6
+    sleep 0.5
+    
+    2.times do
+      play :B6
+      sleep 0.5
+      play :A6
+      sleep 0.25
+      play :Gs6
+      sleep 0.25
+      play :A6
+      sleep 0.5
+      play :B6
+      sleep 0.5
+      play :Cs7
+      sleep 0.5
+      play :B6
+      sleep 1
+      play :E6
+      sleep 0.5
+    end
+    
+    play :Cs7
+    sleep 0.5
+    play :B6
+    sleep 1
+    play :A6
+    sleep 0.5
+    play :Gs6
+    sleep 0.5
+    play :Fs6
+    sleep 0.25
+    play :E6
+    sleep 0.25
+    play :Fs6
+    sleep 1
+    play :E6
+    sleep 1.5
+  end
+  
+end #einde van de "in_thread do"
+
+in_thread do #bass
+  
+  2.times do #maat 1-6
+    play :E5
+    sleep 0.5
+    
+    2.times do
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+    end
+    
+    play :E5
+    sleep 0.5
+    play :E5
+    sleep 0.5
+    play :A4
+    sleep 0.5
+    play :As4
+    sleep 0.5
+    play :B4
+    sleep 1.5
+  end
+  
+  2.times do #maat 7-13
+    play :E5
+    sleep 0.5
+    
+    2.times do
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+      play :E5
+      sleep 1
+    end
+    
+    play :E5
+    sleep 1
+    play :E5
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    play :E5
+    sleep 0.5
+    play :E4
+    sleep 0.5
+    play :B5
+    sleep 0.5
+    play :B4
+    sleep 0.5
+    play :E4
+    sleep 1.5
+  end
+  
+end #einde van de "in_thread do"
