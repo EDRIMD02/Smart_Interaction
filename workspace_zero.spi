@@ -1,203 +1,7 @@
-comment do
-  
-  # vivaldi spring
-  
-  use_bpm 90
-  
-  in_thread do #first violin
-    play :E6
-    sleep 0.5
-    
-    2.times do
-      play :Gs6
-      sleep 0.5
-      play :Gs6
-      sleep 0.5
-      play :Gs6
-      sleep 0.5
-      play :Fs6
-      sleep 0.25
-      play :E6
-      sleep 0.25
-      play :B6
-      sleep 1.5
-      
-      play :B6
-      sleep 0.25
-      play :A6
-      sleep 0.25
-    end
-    
-    play :Gs6
-    sleep 0.5
-    play :A6
-    sleep 0.25
-    play :B6
-    sleep 0.25
-    play :A6
-    sleep 0.5
-    play :Gs6
-    sleep 0.5
-    
-    play :Fs6
-    sleep 0.5
-    play :Ds6
-    sleep 0.5
-    play :B5
-    sleep 0.5
-    play :E6
-    sleep 0.5
-    
-    2.times do
-      play :Gs6
-      sleep 0.5
-      play :Gs6
-      sleep 0.5
-      play :Gs6
-      sleep 0.5
-      play :Fs6
-      sleep 0.25
-      play :E6
-      sleep 0.25
-      play :B6
-      sleep 1.5
-      
-      play :B6
-      sleep 0.25
-      play :A6
-      sleep 0.25
-    end
-    
-    play :Gs6
-    sleep 0.5
-    play :A6
-    sleep 0.25
-    play :B6
-    sleep 0.25
-    play :A6
-    sleep 0.5
-    play :Gs6
-    sleep 0.5
-    play :Fs6
-    sleep 1
-    
-    sleep 0.5
-    
-    2.times do
-      play :E6
-      sleep 0.5
-      
-      2.times do
-        play :B6
-        sleep 0.5
-        play :A6
-        sleep 0.25
-        play :Gs6
-        sleep 0.25
-        play :A6
-        sleep 0.5
-        play :B6
-        sleep 0.5
-        play :Cs7
-        sleep 0.5
-        play :B6
-        sleep 1
-        play :E6
-        sleep 0.5
-      end
-      
-      play :Cs7
-      sleep 0.5
-      play :B6
-      sleep 1
-      play :A6
-      sleep 0.5
-      play :Gs6
-      sleep 0.5
-      play :Fs6
-      sleep 0.25
-      play :E6
-      sleep 0.25
-      play :Fs6
-      sleep 1
-      play :E6
-      sleep 1.5
-    end
-    
-  end
-  
-  in_thread do #bass
-    
-    2.times do
-      play :E5
-      sleep 0.5
-      
-      2.times do
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-      end
-      
-      play :E5
-      sleep 0.5
-      play :E5
-      sleep 0.5
-      play :A4
-      sleep 0.5
-      play :As4
-      sleep 0.5
-      play :B4
-      sleep 1.5
-    end
-    
-    2.times do
-      play :E5
-      sleep 0.5
-      
-      2.times do
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-        play :E5
-        sleep 1
-      end
-      
-      play :E5
-      sleep 1
-      play :E5
-      sleep 0.5
-      play :B4
-      sleep 0.5
-      play :E5
-      sleep 0.5
-      play :E4
-      sleep 0.5
-      play :B5
-      sleep 0.5
-      play :B4
-      sleep 0.5
-      play :E4
-      sleep 1.5
-    end
-    
-  end
-  
-  sleep 2
-  
-end
-
 # bach prelude
-use_bpm 128
+use_bpm 128 #snelheid van het stuk
 
-2.times do
+2.times do #maat 1
   play :G4
   sleep 0.5
   play :D5
@@ -216,7 +20,7 @@ use_bpm 128
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 2
   play :G4
   sleep 0.5
   play :E5
@@ -235,7 +39,7 @@ end
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 3
   play :G4
   sleep 0.5
   play :Fs5
@@ -254,7 +58,7 @@ end
   sleep 0.5
 end
 
-play :G4
+play :G4 #maat 4a (a = eerste deel van de maat)
 sleep 0.5
 play :G5
 sleep 0.5
@@ -271,7 +75,7 @@ sleep 0.5
 play :G5
 sleep 0.5
 
-play :G4
+play :G4 #maat 4b (b = tweede deel van de maat)
 sleep 0.5
 play :G5
 sleep 0.5
@@ -288,7 +92,7 @@ sleep 0.5
 play :Fs5
 sleep 0.5
 
-play :G4
+play :G4 #maat 5a
 sleep 0.5
 play :E5
 sleep 0.5
@@ -305,7 +109,7 @@ sleep 0.5
 play :G5
 sleep 0.5
 
-play :E5
+play :E5 #maat 5b
 sleep 0.5
 play :G5
 sleep 0.5
@@ -322,7 +126,7 @@ sleep 0.5
 play :B4
 sleep 0.5
 
-2.times do
+2.times do #maat 6
   play :Cs5
   sleep 0.5
   play :G5
@@ -341,7 +145,7 @@ sleep 0.5
   sleep 0.5
 end
 
-play :Fs5
+play :Fs5 #maat 7a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -358,7 +162,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :Fs5
+play :Fs5 #maat 7b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -375,7 +179,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-2.times do
+2.times do #maat 8
   play :E4
   sleep 0.5
   play :B4
@@ -394,7 +198,7 @@ sleep 0.5
   sleep 0.5
 end
 
-play :E4
+play :E4 #maat 9a
 sleep 0.5
 play :Cs5
 sleep 0.5
@@ -411,7 +215,7 @@ sleep 0.5
 play :A4
 sleep 0.5
 
-play :G5
+play :G5 #maat 9b
 sleep 0.5
 play :Fs5
 sleep 0.5
@@ -428,7 +232,7 @@ sleep 0.5
 play :G5
 sleep 0.5
 
-play :Fs5
+play :Fs5 #maat 10a
 sleep 0.5
 play :E5
 sleep 0.5
@@ -445,7 +249,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :D5
+play :D5 #maat 10b
 sleep 0.5
 play :E5
 sleep 0.5
@@ -462,7 +266,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-play :Gs5
+play :Gs5 #maat 11a
 sleep 0.5
 play :D5
 sleep 0.5
@@ -479,7 +283,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-play :B5
+play :B5 #maat 11b
 sleep 0.5
 play :D5
 sleep 0.5
@@ -496,7 +300,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-2.times do
+2.times do #maat 12
   play :C5
   sleep 0.5
   play :E5
@@ -515,7 +319,7 @@ sleep 0.5
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 13
   play :Ds5
   sleep 0.5
   play :Fs5
@@ -534,7 +338,7 @@ end
   sleep 0.5
 end
 
-play :G5
+play :G5 #maat 14a
 sleep 0.5
 play :Fs5
 sleep 0.5
@@ -551,7 +355,7 @@ sleep 0.5
 play :Fs5
 sleep 0.5
 
-play :G5
+play :G5 #maat 14b
 sleep 0.5
 play :Fs5
 sleep 0.5
@@ -569,7 +373,7 @@ play :G4
 sleep 0.5
 
 
-2.times do
+2.times do #maat 15
   play :Fs4
   sleep 0.5
   play :C5
@@ -588,7 +392,7 @@ sleep 0.5
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 16
   play :G4
   sleep 0.5
   play :B4
@@ -607,7 +411,7 @@ end
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 17
   play :G4
   sleep 0.5
   play :C5
@@ -626,7 +430,7 @@ end
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 18
   play :G4
   sleep 0.5
   play :Fs5
@@ -645,7 +449,7 @@ end
   sleep 0.5
 end
 
-play :G4
+play :G4 #maat 19a
 sleep 0.5
 play :D5
 sleep 0.5
@@ -662,7 +466,7 @@ sleep 0.5
 play :E5
 sleep 0.5
 
-play :D5
+play :D5 #maat 19b
 sleep 0.5
 play :C5
 sleep 0.5
@@ -679,7 +483,7 @@ sleep 0.5
 play :D4
 sleep 0.5
 
-2.times do
+2.times do #maat 20
   play :Cs4
   sleep 0.5
   play :A4
@@ -698,7 +502,7 @@ sleep 0.5
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 21
   play :C4
   sleep 0.5
   play :A4
@@ -717,7 +521,7 @@ end
   sleep 0.5
 end
 
-play :C4
+play :C4 #maat 22a
 sleep 0.5
 play :A4
 sleep 0.5
@@ -730,10 +534,10 @@ play :A5
 sleep 0.5
 play :Cs6
 sleep 0.5
-play :D6
+play :D6 #orgelpunt (https://nl.wikipedia.org/wiki/Orgelpunt)
 sleep 3.5
 
-play :A4
+play :A4 #maat 22b
 sleep 0.5
 play :B4
 sleep 0.5
@@ -748,7 +552,7 @@ sleep 0.5
 play :G5
 sleep 0.5
 
-play :A5
+play :A5 #maat 23a
 sleep 0.5
 play :Fs5
 sleep 0.5
@@ -765,7 +569,7 @@ sleep 0.5
 play :B5
 sleep 0.5
 
-play :C6
+play :C6 #maat 23b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -782,7 +586,7 @@ sleep 0.5
 play :D6
 sleep 0.5
 
-play :Eb6
+play :Eb6 #maat 24a
 sleep 0.5
 play :D6
 sleep 0.5
@@ -799,7 +603,7 @@ sleep 0.5
 play :C6
 sleep 0.5
 
-play :C6
+play :C6 #maat 24b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -816,7 +620,7 @@ sleep 0.5
 play :C5
 sleep 0.5
 
-play :D4
+play :D4 #maat 25a
 sleep 0.5
 play :A4
 sleep 0.5
@@ -833,7 +637,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :B5
+play :B5 #maat 25b
 sleep 0.5
 play :G5
 sleep 0.5
@@ -850,7 +654,7 @@ sleep 0.5
 play :B4
 sleep 0.5
 
-play :D4
+play :D4 #maat 26a
 sleep 0.5
 play :G4
 sleep 0.5
@@ -867,7 +671,7 @@ sleep 0.5
 play :G5
 sleep 0.5
 
-play :Cs6
+play :Cs6 #maat 26b
 sleep 0.5
 play :Bb5
 sleep 0.5
@@ -884,7 +688,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :A5
+play :A5 #maat 27a
 sleep 0.5
 play :G5
 sleep 0.5
@@ -892,16 +696,16 @@ play :Fs5
 sleep 0.5
 play :G5
 sleep 0.5
-play :G5
-sleep 0.5
 play :E5
+sleep 0.5
+play :D5
 sleep 0.5
 play :Cs5
 sleep 0.5
 play :B4
 sleep 0.5
 
-play :A4
+play :A4 #maat 27b
 sleep 0.5
 play :Cs5
 sleep 0.5
@@ -918,7 +722,7 @@ sleep 0.5
 play :Cs6
 sleep 0.5
 
-play :D6
+play :D6 #maat 28a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -935,7 +739,7 @@ sleep 0.5
 play :Fs5
 sleep 0.5
 
-play :A4
+play :A4 #maat 28b
 sleep 0.5
 play :D5
 sleep 0.5
@@ -952,8 +756,8 @@ sleep 0.5
 play :E4
 sleep 0.5
 
-play :D4
-sleep 0.5
+play :D4 #maat 29a
+sleep 1
 play :C6
 sleep 0.5
 play :B5
@@ -966,9 +770,9 @@ play :Fs5
 sleep 0.5
 play :E5
 sleep 0.5
-play :D5
-sleep 0.5
 
+play :D5 #maat 29b
+sleep 0.5
 play :C5
 sleep 0.5
 play :B5
@@ -983,10 +787,25 @@ play :E5
 sleep 0.5
 play :D5
 sleep 0.5
+
+play :C5 #maat 30a
+sleep 0.5
+play :B4
+sleep 0.5
+play :A5
+sleep 0.5
+play :G5
+sleep 0.5
+play :Fs5
+sleep 0.5
+play :E5
+sleep 0.5
+play :D5
+sleep 0.5
 play :C5
 sleep 0.5
 
-play :B4
+play :B4 #maat 30b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1003,7 +822,7 @@ sleep 0.5
 play :B4
 sleep 0.5
 
-play :A4
+play :A4 #maat 31a
 sleep 0.5
 play :G5
 sleep 0.5
@@ -1020,7 +839,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :E5
+play :E5 #maat 31b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1037,7 +856,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-2.times do
+2.times do #maat 32
   play :Fs5
   sleep 0.5
   play :A5
@@ -1056,7 +875,7 @@ sleep 0.5
   sleep 0.5
 end
 
-play :Fs5
+play :Fs5 #maat 33a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1073,7 +892,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :G5
+play :G5 #maat 33b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1090,7 +909,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :A5
+play :A5 #maat 34a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1107,7 +926,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :B5
+play :B5 #maat 34b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1124,7 +943,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :C6
+play :C6 #maat 35a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1141,7 +960,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :B5
+play :B5 #maat 35b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1158,7 +977,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :A5
+play :A5 #maat 36a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1175,7 +994,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :G5
+play :G5 #maat 36b
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1192,7 +1011,7 @@ sleep 0.5
 play :A5
 sleep 0.5
 
-play :Fs5
+play :Fs5 #maat 37a
 sleep 0.5
 play :A5
 sleep 0.5
@@ -1209,7 +1028,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-play :G5
+play :G5 #maat 37b
 sleep 0.5
 play :D5
 sleep 0.5
@@ -1226,7 +1045,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-play :B5
+play :B5 #maat 38a
 sleep 0.5
 play :D5
 sleep 0.5
@@ -1243,7 +1062,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-play :Eb6
+play :Eb6 #maat 38b
 sleep 0.5
 play :D5
 sleep 0.5
@@ -1260,7 +1079,7 @@ sleep 0.5
 play :D5
 sleep 0.5
 
-2.times do
+2.times do #maat 39
   play :G6
   sleep 0.5
   play :B5
@@ -1279,7 +1098,7 @@ sleep 0.5
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 40
   play :G6
   sleep 0.5
   play :A5
@@ -1298,7 +1117,7 @@ end
   sleep 0.5
 end
 
-2.times do
+2.times do #maat 41
   play :Fs6
   sleep 0.5
   play :C6
@@ -1317,7 +1136,9 @@ end
   sleep 0.5
 end
 
-play :G6, release: 4
+#maat 42
+
+play :G6, release: 4 #"release" zorgt ervoor dat de noot voor 4 seconden klinkt
 play :B5, release: 4
 play :G5, release: 4
 sleep 4
