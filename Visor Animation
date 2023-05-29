@@ -1,0 +1,117 @@
+# ===== Default : Default
+def draw
+  background 0  # Set the background color to black
+
+  low = fft_range(0, 7)   # Calculate the low-frequency range
+  mid = fft_range(9, 13)  # Calculate the mid-frequency range
+  high = fft_range(19, 24)  # Calculate the high-frequency range
+
+  translate width * 0.5, height * 0.5  # Move the origin to the center of the canvas
+
+  no_fill  # Disable filling shapes
+  stroke_weight 4  # Set the stroke weight to 4
+
+  shape1_color = [178, 255, 169]  # Define the color for shape1 as an RGB array
+
+  star_points = 9  # Number of points in the star shape
+  star_radius = 50 + mid * 500  # Calculate the radius of the star shape based on mid-frequency range
+
+  begin_shape
+  star_points.times do |i|
+    angle = map(i, 0, star_points, 0, TWO_PI)  # Calculate the angle for each point of the star shape
+    x = star_radius * cos(angle)  # Calculate the x-coordinate of each point
+    y = star_radius * sin(angle)  # Calculate the y-coordinate of each point
+
+    stroke(*shape1_color)  # Set the stroke color for shape1
+
+    vertex x, y  # Add a vertex to the shape at (x, y)
+  end
+  end_shape CLOSE
+
+  smaller_shape_points = 12  # Number of points in the smaller shape
+  smaller_shape_radius = 20 + high * 200  # Calculate the radius of the smaller shape based on high-frequency range
+  shape2_color = [219, 84, 97]  # Define the color for shape2 as an RGB array
+
+  push_matrix
+  stroke_weight 4  # Set the stroke weight to 4
+  stroke(*shape2_color)  # Set the stroke color for shape2
+
+  begin_shape
+  smaller_shape_points.times do |i|
+    angle = map(i, 0, smaller_shape_points, 0, TWO_PI)  # Calculate the angle for each point of the smaller shape
+    x = smaller_shape_radius * cos(angle)  # Calculate the x-coordinate of each point
+    y = smaller_shape_radius * sin(angle)  # Calculate the y-coordinate of each point
+
+    vertex x, y  # Add a vertex to the shape at (x, y)
+  end
+  end_shape CLOSE
+
+  pop_matrix
+
+  larger_shape_points = 8  # Number of points in the larger shape
+  larger_shape_radius = 80 + mid * 800  # Calculate the radius of the larger shape based on mid-frequency range
+  shape3_color = [109, 20, 204]  # Define the color for shape3 as an RGB array
+
+  push_matrix
+  stroke_weight 4  # Set the stroke weight to 4
+  stroke(*shape3_color)  # Set the stroke color for shape3
+
+  begin_shape
+  larger_shape_points.times do |i|
+    angle = map(i, 0, larger_shape_points, 0, TWO_PI)  # Calculate the angle for each point of the larger shape
+    x = larger_shape_radius * cos(angle)  # Calculate the x-coordinate of each point
+    y = larger_shape_radius * sin(angle)  # Calculate the y-coordinate of each point
+
+    stroke(*shape3_color)  # Set the stroke color for shape3
+
+    vertex x, y  # Add a vertex to the shape at (x, y)
+  end
+  end_shape CLOSE
+
+  pop_matrix
+
+  shape1_points = 6  # Number of points in shape1
+  shape1_radius = 60 + high * 600  # Calculate the radius of shape1 based on high-frequency range
+  shape4_color = [42, 144, 203]  # Define the color for shape4 as an RGB array
+
+  push_matrix
+  stroke_weight 4  # Set the stroke weight to 4
+  stroke(*shape4_color)  # Set the stroke color for shape4
+
+  begin_shape
+  shape1_points.times do |i|
+    angle = map(i, 0, shape1_points, 0, TWO_PI)  # Calculate the angle for each point of shape1
+    x = shape1_radius * cos(angle)  # Calculate the x-coordinate of each point
+    y = shape1_radius * sin(angle)  # Calculate the y-coordinate of each point
+
+    vertex x, y  # Add a vertex to the shape at (x, y)
+  end
+  end_shape CLOSE
+
+  pop_matrix
+
+  shape2_points = 10  # Number of points in shape2
+  shape2_radius = 40 + low * 400  # Calculate the radius of shape2 based on low-frequency range
+  shape5_color = [255, 155, 66]  # Define the color for shape5 as an RGB array
+
+  push_matrix
+  stroke_weight 4  # Set the stroke weight to 4
+  stroke(*shape5_color)  # Set the stroke color for shape5
+
+  begin_shape
+  shape2_points.times do |i|
+    angle = map(i, 0, shape2_points, 0, TWO_PI)  # Calculate the angle for each point of shape2
+    x = shape2_radius * cos(angle)  # Calculate the x-coordinate of each point
+    y = shape2_radius * sin(angle)  # Calculate the y-coordinate of each point
+
+    vertex x, y  # Add a vertex to the shape at (x, y)
+  end
+  end_shape CLOSE
+
+  pop_matrix
+
+end
+
+
+# ===== midi : Default
+
