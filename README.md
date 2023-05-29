@@ -3,8 +3,8 @@ Dit project bestaat uit 2 onderdelen:
    - Visor Live
 
 In Sonic Pi:
-   - Prélude van de eerste cellosuit van Bach
-   - Lente van de vier seizoenen van Vivaldi
+   - Prélude van de eerste cellosuite van J.S. Bach
+   - "Lente" van de vier seizoenen van Antonio Vivaldi
 
 In Visor Live:
    - Visuals: meerdere veelhoeken die bewegen op de muziek
@@ -20,4 +20,4 @@ Om het project af te spelen:
    - Code kopiëren naar Sonic Pi en Visor Live
    - Sketch aanzetten in Visor Live
 
-Hierna kan u het project afspelen en kan u zelf ook aanpassingen maken.
+Hierna kan men het project afspelen en zelf ook aanpassingen doen.
